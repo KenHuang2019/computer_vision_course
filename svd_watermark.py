@@ -37,7 +37,7 @@ if __name__ == '__main__':
 
     concated_sigma_metrix = replace_sv(sigma_A, sigma_B)
 
-    # U_A * c_sigma * VT_A
+    # U_A * concated_sigma_metrix * VT_A
     t = np.dot(U_A, concated_sigma_metrix)
     watermarked_img = np.dot(t, VT_A)
 
